@@ -210,15 +210,16 @@ button{
 }
 
 .text-content {
-    display: flex;
-    margin-top: 60px;
-    flex-direction: column;
-    margin-left: 0;
-    margin-right: 0;
-    align-items: flex-start; 
-    justify-content: flex-start;
-    width: 100%;
-    padding-top: 100px
+    /* ตำแหน่งของข้อความ */
+    width: 50%;
+    padding-top: 100px; /* เลื่อนข้อความลงมา */
+    justify-content: center;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .text-content a{
@@ -275,6 +276,24 @@ button{
 .button-btn:hover{
     background-color:  #80caf2;
     color: #DD2D4A;
+}
+
+.button-btn{
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #DD2D4A;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 30px;
+    border: 2px solid #4A5665;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
+    z-index: 10;
+    background-color: #DD2D4A;
+    
 }
 
 .button:hover{
@@ -777,6 +796,7 @@ button{
 
 
 }
+
 
 
 
