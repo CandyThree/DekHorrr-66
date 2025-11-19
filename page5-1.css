@@ -610,7 +610,7 @@ button{
 .text-content {
     /* ตำแหน่งของข้อความ */
     width: 50%;
-    padding-top: 50px; /* เลื่อนข้อความลงมา */
+    padding-top: 100px; /* เลื่อนข้อความลงมา */
     justify-content: center;
     margin: 0 auto;
     display: block;
@@ -1067,6 +1067,7 @@ button{
     background-color: #fac031;
     color: #000;
 }
+
 
 
 
