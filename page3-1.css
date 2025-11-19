@@ -1,0 +1,1192 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    font-family: "Itim", cursive;
+    font-style: normal;
+}
+/* การรีเซ็ตพื้นฐานและฟอนต์ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+:root {
+    --primary-color: #fa6782; /* แดง/ชมพูสำหรับ Home และปุ่ม */
+    --text-menu: #ffffff; /* สีเทาสำหรับลิงก์ทั่วไป */
+    --bg-page: #BFDDEE; /* สีพื้นหลังอ่อนๆ ของหน้าจอ */
+    --hover-bg: #FDEEEB; /* สีพื้นหลัง Hover */
+    --text-color: #FFFFFF; /* สีข้อความขาว */
+    --headline-color: #FFFFFF;
+     --footer-bg: #13244b; 
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    font-family: "Itim", cursive;
+    font-style: normal;
+}
+/* การรีเซ็ตพื้นฐานและฟอนต์ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+:root {
+    --primary-color: #fa6782; /* แดง/ชมพูสำหรับ Home และปุ่ม */
+    --text-menu: #ffffff; /* สีเทาสำหรับลิงก์ทั่วไป */
+    --bg-page: #BFDDEE; /* สีพื้นหลังอ่อนๆ ของหน้าจอ */
+    --hover-bg: #FDEEEB; /* สีพื้นหลัง Hover */
+    --text-color: #FFFFFF; /* สีข้อความขาว */
+    --headline-color: #FFFFFF;
+     --footer-bg: #13244b; 
+    
+}
+
+/* --- Navigation Bar Layout --- */
+.main-header {
+    padding: 20px 0;
+    background-color: rgb(7, 59, 131); /* พื้นหลังสีขาว */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* เพิ่มเงาเล็กน้อย */
+    border-radius: 3px;
+    position: fixed; 
+    top: 0;       /* ยึดติดกับขอบด้านบนของหน้าจอ */
+    width: 100%;  /* ทำให้ Navbar กว้างเต็มจอเสมอ */
+    z-index: 1000;
+}
+
+.nav-wrapper {
+    /* ใช้ Flexbox จัดเรียง Logo, Menu, และ Button ให้อยู่ในแถวเดียวกัน */
+    display: flex;
+    justify-content: space-between; /* กระจายองค์ประกอบให้เต็มพื้นที่ */
+    align-items: center; /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
+    max-width: 1200px; /* จำกัดความกว้างของเนื้อหา */
+    margin: 0 auto; /* จัดให้อยู่กึ่งกลาง */
+    padding: 0 20px;
+}
+
+/* --- Logo Style --- */
+.logo {
+    font-size: 35px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(9, 8, 7, 0.8);
+    color: var(--primary-color);
+    text-decoration: none;
+    /* ในรูป Flato Logo อาจจะเป็นรูปภาพ หรือใช้ฟอนต์ที่ต่างกัน */
+}
+
+/* --- Menu Links Style --- */
+.main-nav ul {
+    list-style: none;
+    display: flex; /* จัดให้เมนูอยู่เรียงกันในแนวนอน */
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav ul li {
+    margin: 0 10px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    font-size: 20px; 
+    font-weight: 500;
+    color: var(--text-menu); /* สีเทาเข้ม */
+    padding: 10px 15px; /* เพิ่ม Padding เพื่อให้เกิดกล่องเมื่อ Hover */
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+    display: block; /* สำคัญ: เพื่อให้ Padding และ Hover ทำงานได้ */
+    border-radius: 5px;
+}
+
+/* Style สำหรับลิงก์ที่ถูกเลือกอยู่ (Home) */
+.main-nav ul li .active-link {
+    color: var(--primary-color); /* สีชมพู/แดง */
+    font-weight: 600;
+}
+
+/* Hover Effect (กล่องสีอ่อน) */
+.main-nav ul li a:hover:not(.active-link) {
+    background-color: var(--hover-bg); /* สีชมพูอ่อน */
+    color: var(--primary-color);
+}
+
+
+
+/*  FOOTER */
+.main-footer {
+    background-color: var(--footer-bg);
+    color: white;
+    padding-top: 30px;  
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 10px;
+}
+
+.footer-logo {
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.col-about p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    margin-right: 15px;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.footer-col h3 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: white;
+    font-weight: 600;
+    
+}
+
+.col-links ul {
+    list-style: none;
+    
+}
+
+.col-links ul li a {
+    text-decoration: none;
+    color: #ccc;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    color: var(--primary-color);
+    margin-top: 3px;
+    font-size: 16px;
+    
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 0 20px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #4D475B; /* เส้นแบ่งสีเข้มขึ้น */
+}
+
+.copyright p {
+    font-size: 13px;
+    color: #f8e47b;
+}
+
+
+
+
+
+
+
+
+
+.text-content h4{
+    margin: 0 30px;
+}
+button{
+    margin: 0 30px;
+}
+
+/* สไตล์เมื่อปุ่มถูกเลือก (Active) */
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+    opacity: 1;
+    color: #FFF;
+    background-color: #DD2D4A; /* ใช้สีพื้นหลังเดียวกับปุ่มสั่งเลย */
+    border-color: #000000;
+    border-radius: 30px;
+    
+}
+
+.tab-pane:not(.active) {
+
+    height: 0;      /* ทำให้ความสูงเป็นศูนย์ */
+    padding: 0 ;     /* ลบ padding (ระยะห่างภายใน) */
+    margin: 0;      /* ลบ margin (ระยะห่างภายนอก) */
+    overflow: hidden ; /* ซ่อนเนื้อหาที่เกินมาทั้งหมด */
+    visibility: hidden;        /* (ทางเลือก) ซ่อนจาก screen readers/เบราว์เซอร์อย่างสมบูรณ์ */
+}
+
+
+
+
+
+/* --- ส่วน Hero Section --- */
+
+.hero-section {
+    background-image: url("Image/bg4.jpg");
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 40px 100px; 
+    height: 70vh; /* กำหนดความสูงเพื่อควบคุมการจัดวางในพื้นที่หลัก */
+    display: flex;
+    align-items: flex-start; /* จัดให้อยู่ด้านบน */
+    z-index: 5;
+    background-size: cover;        /* เพิ่มบรรทัดนี้ */
+    background-position: center;
+    
+    
+}
+
+
+
+.content-wrapper {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    /* ไม่ต้องใช้ justify-content: space-between; เพื่อควบคุมระยะห่างเอง */
+}
+
+.text-content {
+    display: flex;
+    margin-top: 60px;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: flex-start; 
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.text-content a{
+    margin-left: 0;
+}
+
+.text-content h1 {
+    position: relative;
+    z-index: 5;
+    font-size: 95px; /* ปรับขนาดใหญ่ */
+    font-weight: 900;
+    line-height: 0.9;
+    color: #FFDE59; /* สีเหลืองสดใส */
+    letter-spacing: -3px;
+    text-shadow: 4px 4px 0px #000000;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+
+}
+
+.text-content p {
+    position: relative;
+    z-index: 6;
+    font-size: 25px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 40px;
+    max-width: 450px;
+    text-shadow: 2px 2px 0px #000000;
+    margin: 0;
+    display: block;
+    width: fit-content;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* ปุ่ม */
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #4A5665;
+    border: 2px solid #7db8ff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 3;
+    
+}
+
+.button-btn:hover{
+    background-color:  #80caf2;
+    color: #DD2D4A;
+}
+
+.button:hover{
+    background-color: #DD2D4A;
+    color: #FFF;
+}
+
+.menu-navbar{
+    display: flex;
+    text-align: center;
+    background-color: #13244b;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px; /* ลบ padding บน-ล่างออก เพราะใช้ height แทนแล้ว */
+    margin: 0 auto;
+    z-index: 10;
+    gap: 50px;
+
+}
+
+ /* วิดิโอ */
+#mySlider{
+    width: 1000px;
+    height: 500px;
+    /* background-color: #f1ffa8; */
+    margin: auto;
+    background-image: url("Image/ta1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 50px;
+}
+
+.carousel-inner{
+    display: flex;
+   
+    /* border-radius: 30px; */
+    height: auto;
+    width: auto;
+
+}
+
+
+
+.carousel-item p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.6rem; /* ใช้ค่าใหญ่แทน large เพื่อความแม่นยำ */
+    font-weight: bold;
+    margin-bottom: 30px; 
+    margin-top: 0;
+    color: #FFDE59;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+   
+    
+
+}
+
+
+
+
+
+#mySlider2{
+    width: 1000px;
+    height: 500px;
+    /* background-color: #f1ffa8; */
+    margin: auto;
+    background-image: url("Image/ta1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 50px;
+}
+
+
+
+
+#mySlider3{
+    width: 1000px;
+    height: 500px;
+    /* background-color: #f1ffa8; */
+    margin: auto;
+    background-image: url("Image/ta1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 50px;
+}
+
+
+/*Menu*/
+
+.menu{
+    width: 100%;
+    padding: 70px 0;
+    background-color: #BFDDEE;
+    
+}
+ .menu_card{
+    background-color: #ffffff;
+ }
+
+
+
+
+
+.menu h1{
+    color: #fac031;
+    font-size: 55px;
+    text-shadow: 4px 4px 4px #000;
+    text-align: center;
+    margin: 20px auto; /* เว้นบน-ล่าง 20px และกลางแนวนอน */
+    display: block; /* เพิ่ม */
+    width: 100%;
+    padding: 0
+    
+}
+
+
+
+.menu_box{ 
+    display: flex;
+    /* ทำให้ Card ทั้งหมดจัดเรียงอยู่ตรงกลางของ Container */
+    justify-content: center; 
+    /* หากมี Card เยอะแล้วต้องขึ้นบรรทัดใหม่ จะให้เว้นระยะห่างระหว่าง Card ด้วย */
+    /* gap: 50px;  */
+    row-gap: 60px; /* ระยะห่างแนวตั้ง */
+    column-gap: 50px;
+    /* ให้ Card มีการห่อ (wrap) ขึ้นบรรทัดใหม่เมื่อหน้าจอมีขนาดเล็ก */
+    flex-wrap: wrap; 
+    /* ตั้งค่าระยะห่างด้านนอก */
+    /* กำหนดความกว้างสูงสุดของแถว Card */
+    margin: 0 auto; /* จัด container ให้อยู่ตรงกลางของหน้าจอ */
+    padding: 0 15px;
+    max-width: 1400px;
+    
+}
+
+
+.menu h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.menu .menu_box{
+    width: 95%;
+    margin: 0 auto;
+
+    
+}
+
+
+
+.menu .menu_box .menu_card{
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    /* **สำคัญ:** กำหนดขนาดพื้นฐานให้ Card แต่ละใบกินพื้นที่ไม่เกิน 25% (ลบ gap ออกไป) */
+    /* 100% / 4 = 25%. ใช้ค่าน้อยกว่าเล็กน้อยเพื่อเผื่อพื้นที่ gap */
+    flex-basis: 22%; 
+    max-width: 325px; /* ความกว้างสูงสุดของ Card */
+    height: auto;
+}
+
+
+/*  FOOTER */
+.main-footer {
+    background-color: var(--footer-bg);
+    color: white;
+    padding-top: 30px;  
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 10px;
+}
+
+.footer-logo {
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.col-about p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    margin-right: 15px;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.footer-col h3 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: white;
+    font-weight: 600;
+    
+}
+
+.col-links ul {
+    list-style: none;
+    
+}
+
+.col-links ul li a {
+    text-decoration: none;
+    color: #ccc;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    color: var(--primary-color);
+    margin-top: 3px;
+    font-size: 16px;
+    
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 0 20px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #4D475B; /* เส้นแบ่งสีเข้มขึ้น */
+}
+
+.copyright p {
+    font-size: 13px;
+    color: #f8e47b;
+}
+
+
+
+
+
+
+
+
+
+
+.text-content h4{
+    margin: 0 30px;
+}
+button{
+    margin: 0 30px;
+}
+
+/* สไตล์เมื่อปุ่มถูกเลือก (Active) */
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+    opacity: 1;
+    color: #FFF;
+    background-color: #DD2D4A; /* ใช้สีพื้นหลังเดียวกับปุ่มสั่งเลย */
+    border-color: #000000;
+}
+
+.tab-pane:not(.active) {
+
+    height: 0;      /* ทำให้ความสูงเป็นศูนย์ */
+    padding: 0 ;     /* ลบ padding (ระยะห่างภายใน) */
+    margin: 0;      /* ลบ margin (ระยะห่างภายนอก) */
+    overflow: hidden ; /* ซ่อนเนื้อหาที่เกินมาทั้งหมด */
+    visibility: hidden;        /* (ทางเลือก) ซ่อนจาก screen readers/เบราว์เซอร์อย่างสมบูรณ์ */
+}
+
+
+
+
+
+/* --- ส่วน Hero Section --- */
+
+.hero-section {
+    background-image: url("Image/bg4.jpg");
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 40px 100px; 
+    height: 70vh; /* กำหนดความสูงเพื่อควบคุมการจัดวางในพื้นที่หลัก */
+    display: flex;
+    align-items: flex-start; /* จัดให้อยู่ด้านบน */
+    z-index: 5;
+    background-size: cover;        /* เพิ่มบรรทัดนี้ */
+    background-position: center;
+}
+
+
+
+.content-wrapper {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    /* ไม่ต้องใช้ justify-content: space-between; เพื่อควบคุมระยะห่างเอง */
+}
+
+.text-content {
+    display: flex;
+    margin-top: 60px;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: flex-start; 
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.text-content a{
+    margin-left: 0;
+}
+
+.text-content h1 {
+    position: relative;
+    z-index: 5;
+    font-size: 95px; /* ปรับขนาดใหญ่ */
+    font-weight: 900;
+    line-height: 0.9;
+    color: #FFDE59; /* สีเหลืองสดใส */
+    letter-spacing: -3px;
+    text-shadow: 4px 4px 0px #000000;
+    background-repeat: no-repeat;
+
+}
+
+.text-content p {
+    position: relative;
+    z-index: 6;
+    font-size: 25px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 40px;
+    max-width: 450px;
+    text-shadow: 2px 2px 0px #000000;
+    margin: 0;
+    display: block;
+    width: fit-content;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* ปุ่ม */
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #4A5665;
+    border: 2px solid #7db8ff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 3;
+    
+}
+
+.button-btn:hover{
+    background-color:  #80caf2;
+    color: #DD2D4A;
+}
+
+.button:hover{
+    background-color: #DD2D4A;
+    color: #FFF;
+}
+
+.menu-navbar{
+    display: flex;
+    text-align: center;
+    background-color: #13244b;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px; /* ลบ padding บน-ล่างออก เพราะใช้ height แทนแล้ว */
+    margin: 0 auto;
+    z-index: 10;
+    gap: 50px;
+
+}
+
+
+
+
+
+
+ /* วิดิโอ */
+#mySlider{
+    width: 1000px;
+    height: 500px;
+    /* background-color: #f1ffa8; */
+    margin: auto;
+    background-image: url("Image/ta2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 50px;
+}
+
+.carousel-inner{
+    display: flex;
+   
+    /* border-radius: 30px; */
+    height: auto;
+    width: auto;
+
+}
+
+
+
+.carousel-item p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.6rem; /* ใช้ค่าใหญ่แทน large เพื่อความแม่นยำ */
+    font-weight: bold;
+    margin-bottom: 30px; 
+    margin-top: 0;
+    color: #FFDE59;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+   
+    
+
+}
+
+.textvideo{
+    text-align: center;
+    margin: auto;
+    padding: 40px;
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    
+}
+
+
+
+#mySlider2{
+    width: 1000px;
+    height: 500px;
+    /* background-color: #f1ffa8; */
+    margin: auto;
+    background-image: url("Image/ta2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 50px;
+}
+
+
+
+
+#mySlider3{
+    width: 1000px;
+    height: 500px;
+    /* background-color: #f1ffa8; */
+    margin: auto;
+    background-image: url("Image/ta2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Menu*/
+
+.menu{
+    width: 100%;
+    padding: 70px 0;
+    background-color: #BFDDEE;
+    
+}
+ .menu_card{
+    background-color: #ffffff;
+ }
+
+
+
+
+
+.menu h1{
+    color: #fac031;
+    font-size: 55px;
+    text-shadow: 4px 4px 4px #000;
+    text-align: center;
+    margin: 20px auto; /* เว้นบน-ล่าง 20px และกลางแนวนอน */
+    display: block; /* เพิ่ม */
+    width: 100%;
+    padding: 0
+    
+}
+
+
+
+.menu_box{ 
+    display: flex;
+    /* ทำให้ Card ทั้งหมดจัดเรียงอยู่ตรงกลางของ Container */
+    justify-content: center; 
+    /* หากมี Card เยอะแล้วต้องขึ้นบรรทัดใหม่ จะให้เว้นระยะห่างระหว่าง Card ด้วย */
+    /* gap: 50px;  */
+    row-gap: 60px; /* ระยะห่างแนวตั้ง */
+    column-gap: 50px;
+    /* ให้ Card มีการห่อ (wrap) ขึ้นบรรทัดใหม่เมื่อหน้าจอมีขนาดเล็ก */
+    flex-wrap: wrap; 
+    /* ตั้งค่าระยะห่างด้านนอก */
+    /* กำหนดความกว้างสูงสุดของแถว Card */
+    margin: 0 auto; /* จัด container ให้อยู่ตรงกลางของหน้าจอ */
+    padding: 0 15px;
+    max-width: 1400px;
+    
+}
+
+
+
+.menu h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.menu .menu_box{
+    width: 95%;
+    margin: 0 auto;
+
+    
+}
+
+
+
+.menu .menu_box .menu_card{
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    /* **สำคัญ:** กำหนดขนาดพื้นฐานให้ Card แต่ละใบกินพื้นที่ไม่เกิน 25% (ลบ gap ออกไป) */
+    /* 100% / 4 = 25%. ใช้ค่าน้อยกว่าเล็กน้อยเพื่อเผื่อพื้นที่ gap */
+    flex-basis: 22%; 
+    max-width: 325px; /* ความกว้างสูงสุดของ Card */
+    height: auto;                                                                                                                                           
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    
+}
+
+.menu .menu_box .menu_card .menu_image{
+    width: 100%;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.menu .menu_box .menu_card .menu_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+    border-radius: 30px;
+}
+
+
+.menu .menu_box .menu_card .menu_image:hover img{
+    transform: scale(1.1);
+    /* **แนะนำ:** เพิ่ม transition เพื่อให้การขยายดูนุ่มนวลขึ้น */
+    transition: transform 0.5s ease;
+    /* border-radius: 30px; */
+}
+
+.menu_card{
+    overflow: hidden;
+}
+
+.menu .menu_box .menu_card .small_card{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -240px;
+    right: -8px;
+    opacity: 0;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.menu .menu_box .menu_card:hover .small_card{
+    position: relative;
+    top: -240px;
+    right: 20px;
+    opacity: 1;
+    /* border-radius: 30px; */
+}
+
+.menu .menu_box .menu_card .small_card i{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    color: #000;
+    cursor: pointer;
+    text-shadow: 0 0 6px #000;
+    transition: 0.2s;
+}
+
+.menu .menu_box .menu_card .small_card i:hover{
+    color: #fac031;
+}
+
+.menu .menu_box .menu_card .menu_info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: #fac031;
+}
+
+.menu .menu_box .menu_card .menu_info p{
+    text-align: center;
+    line-height: 21px;
+    margin-top: auto;
+    line-height: 21px;
+    flex-grow: 1;
+}
+
+.menu .menu_box .menu_card .menu_info h3{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.menu .menu_box .menu_card .menu_info .menu_icon{
+    color: #fac031;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.menu .menu_box .menu_card .menu_info .menu_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s;
+}
+
+.menu_btn{
+    position: relative;
+    display: block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #f2efef;
+    border: 2px solid #4A5665;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 3;
+    background-color: #DD2D4A;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+}
+
+.menu_btn:hover{
+    background-color:  #fac031;
+    color: #DD2D4A;
+}
+
+
+
+.button-btn{
+    position: relative;
+  display: flex;
+  
+  padding: 12px 30px;
+  color: #ffffff;
+  border: 2px solid #4A5665;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s;
+  z-index: 3;
+  background-color: #DD2D4A;
+  width: fit-content; 
+  justify-content: center; /* จัดกลางแนวนอนของเนื้อหา */
+  align-items: center;    /* จัดกลางแนวตั้งของเนื้อหา */
+
+  margin: 0 auto;
+}
+
+/* recipe */
+.recipe{
+    text-align: center;
+}
+
+.modal-content{
+    border-radius: 30px;
+    background-color: transparent; /* ลบสีพื้นหลังของ Content เดิมออก */
+    overflow: hidden;
+}
+
+.modal-header{
+    background-color: #DD2D4A;
+    
+}
+
+.modal-header h3{
+    margin: auto;
+    text-align: center; /* เพิ่มบรรทัดนี้ */
+    width: 100%;
+    font-weight: bold;
+}
+
+.modal-footer{
+    background-color: #a2d8f4;
+    
+}
+.modal-footer .btn:hover{
+    background-color: #DD2D4A;
+    
+}
+
+.modal-footer .btn{
+    background-color: #fac031;
+    color: #000;
+}
+.modal-body{
+    background-color: #a2d8f4;
+}
+
+/* การปรับให้ตอบสนอง (Responsive Design) อย่างง่าย */
+@media (max-width: 1024px) {
+    .text-content h1 {
+        font-size: 70px;
+    }
+    .can-image {
+        width: 200px;
+        height: 380px;
+    }
+    .can-left { right: 150px; }
+    .can-right { right: 30px; }
+    .cherry-graphic { right: 10px; top: 100px; }
+}
+
+@media (max-width: 768px) {
+    .navbar { justify-content: center; }
+    .logo { position: static; margin-bottom: 10px; }
+    .nav-links { display: none; } /* ซ่อน nav-links */
+    
+    .hero-section {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 0;
+    }
+    .content-wrapper { flex-direction: column; }    
+    .text-content p { max-width: 90%; margin: 0 auto 30px; }
+
+    .image-content {
+        width: 100%;
+        height: 350px;
+        order: 1; /* ย้ายรูปภาพไปด้านบน */
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+}
