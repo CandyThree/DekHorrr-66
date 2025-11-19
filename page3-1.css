@@ -240,18 +240,19 @@ button{
 
 .text-content p {
     position: relative;
-    z-index: 6;
-    font-size: 25px;
+    z-index: 5;
+    font-size: 25px; 
     font-weight: 400;
-    color: #ffffff;
-    margin-bottom: 40px;
-    max-width: 450px;
-    text-shadow: 2px 2px 0px #000000;
-    margin: 0;
-    display: block;
-    width: fit-content;
+    line-height: 0.9;
+    color: #ffffff; 
     margin-bottom: 25px;
+    margin-top: 25px;
+    text-shadow: 10px 8px 10px #000000;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    align-items: center;
 }
 
 /* ปุ่ม */
@@ -586,24 +587,20 @@ button{
 }
 
 .button-btn{
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #DD2D4A;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 30px;
+    border: 2px solid #4A5665;
     position: relative;
-  display: flex;
-  
-  padding: 12px 30px;
-  color: #ffffff;
-  border: 2px solid #4A5665;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 14px;
-  border-radius: 30px;
-  transition: background-color 0.3s, color 0.3s;
-  z-index: 3;
-  background-color: #DD2D4A;
-  width: fit-content; 
-  justify-content: center; /* จัดกลางแนวนอนของเนื้อหา */
-  align-items: center;    /* จัดกลางแนวตั้งของเนื้อหา */
-
-  margin: 0 auto;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
+    z-index: 10;
+    background-color: #DD2D4A;
 }
 
 /* recipe */
@@ -780,5 +777,6 @@ button{
 
 
 }
+
 
 
