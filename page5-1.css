@@ -546,6 +546,16 @@ background-color: #fac031;
     font-weight: 700;
 }
 
+/* สไตล์เมื่อปุ่มถูกเลือก (Active) */
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+    opacity: 1;
+    color: #FFF;
+    background-color: #DD2D4A; /* ใช้สีพื้นหลังเดียวกับปุ่มสั่งเลย */
+    border-color: #000000;
+    border-radius: 30px;
+}
+
 .menu-navbar .button-btn{
     background-color: transparent; /* ลบพื้นหลังสีจางๆ ออก */
     color: #000000;              
@@ -1067,6 +1077,7 @@ button{
     background-color: #fac031;
     color: #000;
 }
+
 
 
 
