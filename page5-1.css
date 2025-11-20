@@ -637,8 +637,8 @@ button{
     font-size: 95px; /* ปรับขนาดใหญ่ */
     font-weight: 900;
     line-height: 0.9;
-    color: #FFDE59; /* สีเหลืองสดใส */
-    margin-bottom: 25px;
+    color: #FFFFFF;
+    margin-top: 25px;
     margin-top: 25px;
     letter-spacing: -3px;
     text-shadow: 10px 8px 10px #000000;
@@ -1077,6 +1077,7 @@ button{
     background-color: #fac031;
     color: #000;
 }
+
 
 
 
