@@ -433,18 +433,7 @@ background-color: #fac031;
 .main-footer {
     background-color: var(--footer-bg);
     color: white;
-    padding-top: 30px; 
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; 
-    width: 100%;
-}
-.main-footer p{
-    padding: auto;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+    padding-top: 30px;  
 }
 
 .footer-wrapper {
@@ -473,7 +462,6 @@ background-color: #fac031;
     color: var(--primary-color);
     cursor: pointer;
     transition: color 0.3s;
-   
 }
 
 .footer-col h3 {
@@ -521,7 +509,7 @@ background-color: #fac031;
 .copyright {
     text-align: center;
     padding: 15px 0;
-    border-top: 1px solid #4D475B; /* เส้นแบ่งสีเข้มขึ้น */
+    border-top: 1px solid #4D475B; /* เน€เธชเนเธเนเธเนเธเธชเธตเน€เธเนเธกเธเธถเนเธ */
 }
 
 .copyright p {
@@ -1077,6 +1065,7 @@ button{
     background-color: #fac031;
     color: #000;
 }
+
 
 
 
