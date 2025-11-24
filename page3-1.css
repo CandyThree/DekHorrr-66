@@ -789,9 +789,35 @@ button{
         justify-content: center;
         margin-bottom: 20px;
     }
+    .main-header {
+        padding: 10px 0;
+    }
+    
+    /* ปรับ Menu-Navbar (แถบสีน้ำเงิน) */
+    .menu-navbar {
+        gap: 10px; /* ลดระยะห่างระหว่างปุ่ม */
+        padding: 15px 5px; /* ลด padding ด้านข้าง */
+    }
+
+    /* ปรับปุ่มเมนูย่อย (เพื่อให้แต่ละปุ่มกินพื้นที่น้อยลง) */
+    .nav-pills .nav-link {
+        /* ปรับขนาดของปุ่มให้เล็กลงเพื่อไม่ให้ล้น */
+        padding: 0.8rem 1rem; /* ลด padding ด้านซ้าย/ขวา */
+        font-size: 1rem;
+        /* ทำให้แต่ละปุ่มใช้พื้นที่เท่ากันและห่อตัว */
+        flex-grow: 1; 
+        flex-basis: auto;
+        min-width: 130px; /* กำหนดความกว้างขั้นต่ำ */
+        margin: 5px auto; 
+    }
+    
+    .nav-pills .nav-link h4 {
+        margin: 0; 
+    }
 
 
 }
+
 
 
 
