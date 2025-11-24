@@ -190,15 +190,10 @@ button{
 .hero-section {
     background-image: url("Image/bg4.jpg");
     position: relative;
-    width: 100%;
-    margin: 0 auto;
-    padding: 50px 40px 100px; 
-    height: 70vh; /* กำหนดความสูงเพื่อควบคุมการจัดวางในพื้นที่หลัก */
-    display: flex;
-    align-items: flex-start; /* จัดให้อยู่ด้านบน */
-    z-index: 5;
-    background-size: cover;        /* เพิ่มบรรทัดนี้ */
-    background-position: center;
+    padding-bottom: 250px;
+    padding-top: 150px; 
+    min-height: 80vh;
+    overflow: hidden; 
 }
 
 
@@ -796,6 +791,7 @@ button{
 
 
 }
+
 
 
 
