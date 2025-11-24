@@ -313,8 +313,7 @@ button{
 
  /* วิดิโอ */
 #mySlider{
-    width: 1000px;
-    height: 500px;
+    width: 90%;
     /* background-color: #f1ffa8; */
     margin: auto;
     background-image: url("Image/ta2.png");
@@ -361,8 +360,7 @@ button{
 
 
 #mySlider2{
-    width: 1000px;
-    height: 500px;
+    width: 90%;
     /* background-color: #f1ffa8; */
     margin: auto;
     background-image: url("Image/ta2.png");
@@ -382,8 +380,7 @@ button{
 
 
 #mySlider3{
-    width: 1000px;
-    height: 500px;
+    width: 90%;
     /* background-color: #f1ffa8; */
     margin: auto;
     background-image: url("Image/ta2.png");
@@ -795,6 +792,7 @@ button{
 
 
 }
+
 
 
 
