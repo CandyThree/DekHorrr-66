@@ -509,7 +509,7 @@ background-color: #fac031;
 .copyright {
     text-align: center;
     padding: 15px 0;
-    border-top: 1px solid #4D475B; /* เน€เธชเนเธเนเธเนเธเธชเธตเน€เธเนเธกเธเธถเนเธ */
+    border-top: 1px solid #4D475B;
 }
 
 .copyright p {
@@ -619,13 +619,12 @@ button{
     line-height: 0.9;
     color: #FFFFFF;
     margin-top: 25px;
-    margin-top: 25px;
+    margin-bottom: 25px;
     letter-spacing: -3px;
     text-shadow: 10px 8px 10px #000000;
     display: flex;
     text-align: center;
     justify-content: center;
-    background-repeat: no-repeat;
     align-items: center;
     
 }
@@ -1057,6 +1056,7 @@ button{
     background-color: #fac031;
     color: #000;
 }
+
 
 
 
