@@ -279,15 +279,12 @@ to { opacity: 1; }
 .modal-content {
 overflow: hidden;
 margin: 5% auto;
-padding: 2rem;
-border-radius: 15px;
 width: 100%;
 max-width: 100vh;
 box-shadow: 0 10px 40px rgba(0,0,0,0.2);
 animation: slideDown 0.3s ease;
 position: relative;
-
-
+border-radius: 30px;
 }
 
 
@@ -1018,11 +1015,6 @@ button{
     text-align: center;
 }
 
-.modal-content{
-    border-radius: 30px;
-    background-color: transparent; /* ลบสีพื้นหลังของ Content เดิมออก */
-    overflow: hidden;/* **สำคัญ**: ซ่อนส่วนเกินเพื่อให้สีของ Header/Body ไม่ล้นขอบมน */
-}
 
 .question{
     background-color: #fff3b6;
@@ -1144,6 +1136,7 @@ button{
 
 
 }
+
 
 
 
